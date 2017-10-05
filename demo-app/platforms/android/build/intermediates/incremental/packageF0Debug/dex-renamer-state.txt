@@ -1,0 +1,4 @@
+#Sat Jul 29 10:51:04 MDT 2017
+base.0=/Users/matt/files/matt/projects/demos/nativescript-demo/demo-app/platforms/android/build/intermediates/transforms/dex/F0/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/matt/files/matt/projects/demos/nativescript-demo/demo-app/platforms/android/build/intermediates/transforms/dex/F0/debug/folders/1000/1f/main/classes.dex

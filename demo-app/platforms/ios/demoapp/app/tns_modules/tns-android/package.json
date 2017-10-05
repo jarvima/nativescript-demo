@@ -1,0 +1,78 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "tns-android@3.0.1",
+        "scope": null,
+        "escapedName": "tns-android",
+        "name": "tns-android",
+        "rawSpec": "3.0.1",
+        "spec": "3.0.1",
+        "type": "version"
+      },
+      "/Users/matt/files/matt/projects/nativescript-demo/demo-app"
+    ]
+  ],
+  "_from": "tns-android@3.0.1",
+  "_id": "tns-android@3.0.1",
+  "_inCache": true,
+  "_location": "/tns-android",
+  "_nodeVersion": "6.10.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/tns-android-3.0.1.tgz_1496237867513_0.3311660389881581"
+  },
+  "_npmUser": {
+    "name": "tns-bot",
+    "email": "nativescript@telerik.com"
+  },
+  "_npmVersion": "4.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "tns-android@3.0.1",
+    "scope": null,
+    "escapedName": "tns-android",
+    "name": "tns-android",
+    "rawSpec": "3.0.1",
+    "spec": "3.0.1",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/tns-android/-/tns-android-3.0.1.tgz",
+  "_shasum": "db9f06cf15caad6a27a6e50a8c926383276cb95b",
+  "_shrinkwrap": null,
+  "_spec": "tns-android@3.0.1",
+  "_where": "/Users/matt/files/matt/projects/nativescript-demo/demo-app",
+  "dependencies": {},
+  "description": "NativeScript Runtime for Android",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "db9f06cf15caad6a27a6e50a8c926383276cb95b",
+    "tarball": "https://registry.npmjs.org/tns-android/-/tns-android-3.0.1.tgz"
+  },
+  "files": [
+    "**/*"
+  ],
+  "maintainers": [
+    {
+      "name": "hdeshev",
+      "email": "hristo@deshev.com"
+    },
+    {
+      "name": "panayot.cankov",
+      "email": "panayot.cankov@telerik.com"
+    },
+    {
+      "name": "tns-bot",
+      "email": "nativescript@telerik.com"
+    }
+  ],
+  "name": "tns-android",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "version": "3.0.1"
+}

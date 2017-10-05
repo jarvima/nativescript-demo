@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="components" navigatingTo="onNavigatingTo" class="page">
+  
+    <StackLayout class="p-20">
+        <Label text="The Name Game" class="h2 text-center" textWrap="true"/>
+        <StackLayout visibility="{{ addView }}">
+          <Label text="Join a group." textWrap="true"/>
+          <Label text="Enter your secret names." textWrap="true"/>
+          <Label text="Guess your secret names." textWrap="true"/>
+          <Button text="Get Started" tap="{{ getStarted }}" class="btn btn-primary btn-active"/>
+        </StackLayout>
+    </StackLayout>
+</Page>

@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="components" shownModally="onShownModally" loaded="onLoaded" class="page">
+  
+    <StackLayout class="p-20">
+        <Label text="Network Error" class="h2 text-center" textWrap="true"/>
+        <StackLayout>
+          <Label text="Sorry, a network error occurred." textWrap="true"/>
+          <Label text="If your internet connection is good, then something failed in our system." textWrap="true"/>
+          <Label text="Go back and try again?." textWrap="true"/>
+          <Button text="Go Back" tap="{{ goBack }}" class="btn btn-primary btn-active"/>
+        </StackLayout>
+    </StackLayout>
+</Page>

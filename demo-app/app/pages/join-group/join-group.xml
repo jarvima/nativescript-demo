@@ -1,0 +1,18 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="components" navigatingTo="onNavigatingTo" class="page">
+  
+    <StackLayout class="p-20">
+        <widgets:header/>
+        <Label text="Join a group" class="h2 text-center" textWrap="true"/>
+        <StackLayout visibility="{{ joinGroup }}">
+          <Label text="Create a group that others can join." textWrap="true"/>
+          <Label text="Only one person should do this." textWrap="true"/>
+          <Button text="Create a Group" tap="{{ createGroup }}" class="btn btn-primary btn-active"/>
+
+          <Label text="Join a group created by someone else." textWrap="true"/>
+          <TextField text="{{ groupName }}" hint="Enter a group name" returnPress="{{ joinGroup }}"/>
+          <Label text="{{ nameErrorMessage }}" visibility="{{ nameError }}" textWrap="true"
+                 class="error-message"/>
+          <Button text="Join Group" tap="{{ joinGroup }}" class="btn btn-primary btn-active"/>
+        </StackLayout>
+    </StackLayout>
+</Page>

@@ -1,0 +1,6 @@
+
+<GridLayout rows="auto" columns="*, *, *">
+    <Button row="0" col="0" text="Add" tap="showEnterNames" class="btn btn-primary btn-active" style="width: 32%"/>
+    <Button row="0" col="1" text="Read" tap="showReadNames" class="btn btn-primary btn-active" style="width: 32%"/>
+    <Button row="0" col="2" text="Reveal" tap="showRevealNames" class="btn btn-primary btn-active" style="width: 32%"/>
+</GridLayout>

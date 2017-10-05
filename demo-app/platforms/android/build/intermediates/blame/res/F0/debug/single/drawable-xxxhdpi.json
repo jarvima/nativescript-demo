@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/matt/files/matt/projects/demos/nativescript-demo/demo-app/platforms/android/build/intermediates/res/merged/F0/debug/drawable-xxxhdpi/logo.png",
+        "source": "/Users/matt/files/matt/projects/demos/nativescript-demo/demo-app/platforms/android/src/main/res/drawable-xxxhdpi/logo.png"
+    },
+    {
+        "merged": "/Users/matt/files/matt/projects/demos/nativescript-demo/demo-app/platforms/android/build/intermediates/res/merged/F0/debug/drawable-xxxhdpi/background.png",
+        "source": "/Users/matt/files/matt/projects/demos/nativescript-demo/demo-app/platforms/android/src/main/res/drawable-xxxhdpi/background.png"
+    },
+    {
+        "merged": "/Users/matt/files/matt/projects/demos/nativescript-demo/demo-app/platforms/android/build/intermediates/res/merged/F0/debug/drawable-xxxhdpi/icon.png",
+        "source": "/Users/matt/files/matt/projects/demos/nativescript-demo/demo-app/platforms/android/src/main/res/drawable-xxxhdpi/icon.png"
+    }
+]

@@ -1,0 +1,25 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="components" navigatingTo="onNavigatingTo" class="page">
+  
+    <StackLayout class="p-20">
+        <widgets:header/>
+        <Label text="Add names page" class="h2 text-center" textWrap="true"/>
+        <StackLayout visibility="{{ addView }}">
+          <TextField id="secretNameInpt" text="{{ secretName }}" hint="Enter your secret name" returnPress="{{ submitName }}"/>
+          <Label text="Names cannot be blank." visibility="{{ nameError }}" textWrap="true"
+                 class="error-message"/>
+          <Button text="Submit Name" tap="{{ submitName }}" class="btn btn-primary btn-active"/>
+        </StackLayout>
+        <StackLayout visibility="{{ optionView }}">
+          <Label text="Name added successfully." class="success-message" textWrap="true"/>
+          <Label text="Is there somebody without a phone that needs to add their name?" textWrap="true"/>
+          <GridLayout rows="auto" columns="*, *">
+              <Button row="0" col="0" text="Add Another" tap="{{ addAnother }}" class="btn btn-primary btn-active" style="width: 48%"/>
+              <Button row="0" col="1" text="Finished" tap="{{ finish }}" class="btn btn-primary btn-active" style="width: 48%"/>
+          </GridLayout>
+        </StackLayout>
+        <StackLayout visibility="{{ nvmView }}" style="margin-top: 40px">
+          <Label text="Nevermind. You're done entering names." textWrap="true"/>
+          <Button row="0" col="1" text="Finished" tap="{{ finish }}" class="btn btn-primary btn-active"/>
+        </StackLayout>
+    </StackLayout>
+</Page>
