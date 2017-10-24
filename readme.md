@@ -65,6 +65,9 @@ Looks like there is more to application.start than just module name.
 ```
   application.start({ moduleName: "main-page" })
 ```
+Tried to change `main-page` and kept getting: `Service exited due to signal: Segmentation fault: 11 sent by exc handler[0]`
+
+Hint: use `tns debug` instead of `tns run`.  Debugger gives better error messages than 'Segmentation fault`.
 
 ## Modules
 Useful for sharing code and data

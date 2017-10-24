@@ -24,24 +24,26 @@ function post(url, data) {
   data.deviceId = deviceId;
   
   // TODO handle any errors here
-  return xhr.post('https://ghostname.herokuapp.com' + url, data)
+  return xhr.post('http://localhost:8080' + url, data)
+  //return xhr.post('https://ghostname.herokuapp.com' + url, data)
   .then(function(response) {
     if (response.statusCode < 300) {
       return response.content.toJSON();
     }
     else {
-      navigator.showNetworkError();
+      var p = Promise.reject({ errorMessage:'network error', response:response});
       console.log('network error - status:', response);
-      return Promise.reject({ errorMessage:'network error', response:response});
+      navigator.showNetworkError();
+      return p;
     }
   },
   function(error) {
-    navigator.showNetworkError();
     console.log('network error - reason:', response);
+    navigator.showNetworkError();
   })
   .catch(function(error) {
-    navigator.showNetworkError();
     console.log('network error - catch:', response);
+    navigator.showNetworkError();
   });
 }
 

@@ -1,7 +1,6 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="components" navigatingTo="onNavigatingTo" class="page">
   
     <StackLayout class="p-20">
-        <widgets:header/>
         <Label text="Join a group" class="h2 text-center" textWrap="true"/>
         <StackLayout visibility="{{ joinGroup }}">
           <Label text="Create a group that others can join." textWrap="true"/>

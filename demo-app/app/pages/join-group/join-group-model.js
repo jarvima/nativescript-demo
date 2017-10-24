@@ -26,33 +26,18 @@ function createViewModel() {
   viewModel.optionView = hide;
   viewModel.nvmView = hide;
   
-  viewModel.init = function(page) {
-    var secretNameInpt = page.getViewById('secretNameInpt');
-    secretNameInpt.addEventListener('propertyChange', viewModel.checkNameChange);
-  };
-  
-  viewModel.checkNameChange = function(args) {
-    console.log('property change args:', args);
-  };
-
-  viewModel.submitName = function(args) {
-    var name = scrubName(this.secretName);
-    if (!name) {
-      this.set('nameError', show);
-      return;
-    }
-    
-    this.set('nameError', hide);
-
-    console.log('The name is good', name, deviceData);
-    deviceData.post('/add-name', { secretName: name });
+  viewModel.createGroup = function(args) {
+    deviceData.post('/create-group')
+    .then(function(response) {
+      console.log('create group response:', response);
+    });
     
     this.set('addView',  hide);
     this.set('optionView', show);
     viewModel.set('nvmView', hide);
   };
   
-  viewModel.addAnother = function() {
+  viewModel.joinGroup = function() {
     viewModel.set('addView',  show);
     viewModel.set('optionView', hide);
     viewModel.set('nvmView', show);
